@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@300&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      h2 {
+        text-align: center;
+        padding: 20px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .nested-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nested-th,
+      .nested-td {
+        border: 1px solid #dddddd;
+        padding: 5px;
+        text-align: left;
+      }
+
+      .nested-th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Book List</h2>
+
+    <table>
+      <tr>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Availability</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>To Kill a Mockingbird</td>
+        <td>Harper Lee</td>
+        <td>Fiction</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1984</td>
+        <td>George Orwell</td>
+        <td>Science Fiction</td>
+        <td>Checked Out</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Pride and Prejudice</td>
+        <td>Jane Austen</td>
+        <td>Romance</td>
+        <td>Available</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>ABSALOM, ABSALOM!</td>
+        <td>WILLIAM FAULKNER</td>
+        <td>Romance</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>A TIME TO KILL</td>
+        <td>JOHN GRISHAM</td>
+        <td>Science Fiction</td>
+        <td>Checked Out</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>THE SUN ALSO RISES</td>
+        <td>ERNEST HEMINGWAY</td>
+        <td>Romance</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          <table class="nested-table">
+            <tr>
+              <th class="nested-th">Book ID</th>
+              <th class="nested-th">Language</th>
+              <th class="nested-th">Pages</th>
+              <th class="nested-th">Publisher</th>
+            </tr>
+            <tr>
+              <td class="nested-td">1</td>
+              <td class="nested-td">English</td>
+              <td class="nested-td">289</td>
+              <td class="nested-td">Westland</td>
+            </tr>
+            <tr>
+              <td class="nested-td">2</td>
+              <td class="nested-td">English</td>
+              <td class="nested-td">381</td>
+              <td class="nested-td">HarperCollins</td>
+            </tr>
+            <tr>
+              <td class="nested-td">3</td>
+              <td class="nested-td">English</td>
+              <td class="nested-td">487</td>
+              <td class="nested-td">Pan Macmillan</td>
+            </tr>
+            <tr>
+              <td class="nested-td">4</td>
+              <td class="nested-td">English</td>
+              <td class="nested-td">563</td>
+              <td class="nested-td">Roli</td>
+            </tr>
+            <tr>
+              <td class="nested-td">5</td>
+              <td class="nested-td">English</td>
+              <td class="nested-td">481</td>
+              <td class="nested-td">Penguin Random</td>
+            </tr>
+            <tr>
+              <td class="nested-td">6</td>
+              <td class="nested-td">English</td>
+              <td class="nested-td">581</td>
+              <td class="nested-td">Jaico</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
