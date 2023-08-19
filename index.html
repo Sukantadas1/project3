@@ -7,14 +7,327 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body bgcolor="lightgreen">
     <div id="navbar">
       <b>Library system</b>
       <!--  <a href="#home">Library system</a> -->
       <a href="#logout">Logout</a>
       <a href="#contact">Contact us</a>
-      <a href="./register.html">Register</a>
-      <a href="./book.html">Books</a>
+      <a href="#register">Register</a>
+      <a href="#books">Books</a>
     </div>
+    <form action="">
+      <center>
+        <br><br><br><br>
+        <font size="4"><b> Register </b></font> <br />
+        <br />
+        First Name:
+        <!--input type as text-->
+        <input type="text" name="firstname" id="firstname" size="30" required />
+        <br /><br />
+        <!--input type as text-->
+        Last Name:
+        <input type="text" name="Lastname" id="Lastname" size="30 " required />
+        <br />
+        <br />
+        DOB:
+        <!--input type as date-->
+        <input type="date" name="dob" id="dob" size="30" required />
+        <br />
+        <br />
+        Age:
+        <!--input type as number-->
+        <input
+          type="number"
+          min="5"
+          max="100"
+          name="age"
+          id="age"
+          size="30"
+          required
+        />
+        <br />
+        <br />
+        EmailId:
+        <!--input type as email-->
+        <input
+          type="email"
+          name="emailid"
+          id="emailid"
+          size="30"
+          placeholder="abc@gmail.com"
+          required
+        />
+        <br /><br />
+
+        Password:
+        <!--input type as number-->
+        <input type="password" name="password" id="age" size="30" required />
+        <br />
+        <br />
+
+        Confirm Password:
+        <!--input type as number-->
+        <input type="password" name="cpassword" id="age" size="30" required />
+        <br />
+        <br />
+      </center>
+      <!--button is used with alert function -->
+      <center>
+        <!--  <button type="button" onclick="alert('Thank you for submiting')">
+          Register
+        </button> -->
+        <button type="submit">Register</button>
+        <input type="reset" />
+      </center>
+    </form>
+
+
+
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@300&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      h2 {
+        text-align: center;
+        padding: 20px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .nested-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nested-th,
+      .nested-td {
+        border: 1px solid #dddddd;
+        padding: 5px;
+        text-align: left;
+      }
+
+      .nested-th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Book List</h2>
+
+    <table>
+      <tr>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Availability</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>To Kill a Mockingbird</td>
+        <td>Harper Lee</td>
+        <td>Fiction</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1984</td>
+        <td>George Orwell</td>
+        <td>Science Fiction</td>
+        <td>Checked Out</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Pride and Prejudice</td>
+        <td>Jane Austen</td>
+        <td>Romance</td>
+        <td>Available</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>ABSALOM, ABSALOM!</td>
+        <td>WILLIAM FAULKNER</td>
+        <td>Romance</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>A TIME TO KILL</td>
+        <td>JOHN GRISHAM</td>
+        <td>Science Fiction</td>
+        <td>Checked Out</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>THE SUN ALSO RISES</td>
+        <td>ERNEST HEMINGWAY</td>
+        <td>Romance</td>
+        <td>Available</td>
+      </tr>
+      <table>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+        </tr>
+        <tr>
+          <td>
+            To Kill a Mockingbird
+            <table class="nested-table">
+              <tr>
+                <td class="nested-th">Publication Date:</td>
+                <td class="nested-td">2023-01-15</td>
+              </tr>
+              <tr>
+                <td class="nested-th">Page Count:</td>
+                <td class="nested-td">320</td>
+              </tr>
+              <tr>
+                <td class="nested-th">ISBN:</td>
+                <td class="nested-td">978-1234567890</td>
+              </tr>
+            </table>
+          </td>
+          <td>Harper Lee</td>
+        </tr>
+        <tr>
+          <td>
+            1984
+            <table class="nested-table">
+              <tr>
+                <td class="nested-th">Publication Date:</td>
+                <td class="nested-td">2020-07-10</td>
+              </tr>
+              <tr>
+                <td class="nested-th">Page Count:</td>
+                <td class="nested-td">256</td>
+              </tr>
+              <tr>
+                <td class="nested-th">ISBN:</td>
+                <td class="nested-td">978-9876543210</td>
+              </tr>
+            </table>
+          </td>
+          <td>George Orwell</td>
+        </tr>
+        <tr>
+            <td>
+             
+              <table class="nested-table">
+                <tr>
+                  <td class="nested-th">Publication Date:</td>
+                  <td class="nested-td">2021-03-14</td>
+                </tr>
+                <tr>
+                  <td class="nested-th">Page Count:</td>
+                  <td class="nested-td">378</td>
+                </tr>
+                <tr>
+                  <td class="nested-th">ISBN:</td>
+                  <td class="nested-td">978-9876543210</td>
+                </tr>
+              </table>
+            </td>
+            <td>WILLIAM FAULKNER</td>
+          </tr>
+
+          <tr>
+            <td>
+                Pride and Prejudice
+              <table class="nested-table">
+                <tr>
+                  <td class="nested-th">Publication Date:</td>
+                  <td class="nested-td">2014-03-08</td>
+                </tr>
+                <tr>
+                  <td class="nested-th">Page Count:</td>
+                  <td class="nested-td">556</td>
+                </tr>
+                <tr>
+                  <td class="nested-th">ISBN:</td>
+                  <td class="nested-td">978-9877543214</td>
+                </tr>
+              </table>
+            </td>
+            <td>Jane Austen</td>
+          </tr>
+
+          <tr>
+            <td>
+                A TIME TO KILL
+              <table class="nested-table">
+                <tr>
+                  <td class="nested-th">Publication Date:</td>
+                  <td class="nested-td">2010-03-16</td>
+                </tr>
+                <tr>
+                  <td class="nested-th">Page Count:</td>
+                  <td class="nested-td">370</td>
+                </tr>
+                <tr>
+                  <td class="nested-th">ISBN:</td>
+                  <td class="nested-td">978-9876344110</td>
+                </tr>
+              </table>
+            </td>
+            <td>JOHN GRISHAM</td>
+          </tr>
+
+
+          <tr>
+            <td>
+                THE SUN ALSO RISES
+              <table class="nested-table">
+                <tr>
+                  <td class="nested-th">Publication Date:</td>
+                  <td class="nested-td">2011-03-15</td>
+                </tr>
+                <tr>
+                  <td class="nested-th">Page Count:</td>
+                  <td class="nested-td">371</td>
+                </tr>
+                <tr>
+                  <td class="nested-th">ISBN:</td>
+                  <td class="nested-td">978-9876949210</td>
+                </tr>
+              </table>
+            </td>
+            <td>ERNEST HEMINGWAY</td>
+          </tr>
+
+
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

@@ -10,6 +10,10 @@ body {
 #navbar {
     overflow: hidden;
     background-color: #0074D9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
 }
 
 /* navlist designing */
@@ -38,10 +42,10 @@ body {
 }
 
 /* scroll portion design */
-.scrollable b {
+/* .scrollable b {
     font-family: 'Special Elite', cursive;
     font-size: 28px;
-}
+} */
 
 .content {
     padding: 16px;
